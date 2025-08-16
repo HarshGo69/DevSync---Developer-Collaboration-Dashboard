@@ -15,15 +15,15 @@ const michroma =  Michroma({
   ,subsets: ["latin"], weight:["400"],
 });
 export const metadata = {
-  title: "Devsync",
-  description: "",
+  title: "Devsync - Team Collaboration Reimagined",
+  description: "Team Collaboration Reimagined",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${michroma.variable} antialiased`}
+        className={`${geistSans.className} ${geistMono.variable} ${michroma.variable} antialiased`}
       >
         {children}
       </body>

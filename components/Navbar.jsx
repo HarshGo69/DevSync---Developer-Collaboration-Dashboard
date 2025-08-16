@@ -11,9 +11,11 @@ const Navbar = () => {
       <a href="#top"><Image width={200}
               height={200} src={"/images/DevSync_logo-removebg-preview.png"} className='w-full h-9'/></a>
     </div>
-    <div className='flex gap-8 px-15'>
+    <div className='flex gap-8 px-15 items-center'>
       <a href="#about" className='text-white hover:text-white/80 text-lg'>About</a>
       <a href="#generate" className='text-white hover:text-white/80 text-lg'>Generate</a>
+      <div className='bg-[#D8D8D8] border rounded-lg border-white/30 py-2 w-35 text-center cursor-pointer hover:bg-[#CCCCCC]'
+      ><a href="#login" className='text-black font-medium '>Login | Sign up</a></div>
     </div>
    </nav>
    </>
