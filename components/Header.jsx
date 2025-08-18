@@ -1,6 +1,8 @@
+'use client';
 import React from 'react'
-
+import { useRouter } from 'next/navigation'
 const Header = () => {
+  const router = useRouter();
   return (
     <div className='h-[100vh] w-full top-0 left-0 relative border border-b border-white/30'>
     
@@ -19,8 +21,8 @@ const Header = () => {
         </p>
 
         {/* Button now sits BELOW paragraph */}
-        <div className='bg-[#D8D8D8] border rounded-lg border-white/30 px-5 py-2 w-35 cursor-pointer hover:bg-[#CCCCCC]'>
-          <a href="#login" className='text-black font-medium '>Get Started</a>
+        <div onClick={() => router.push("/compo/Login")} className='bg-[#D8D8D8] border rounded-lg border-white/30 px-5 py-2 w-35 cursor-pointer hover:bg-[#CCCCCC]'>
+          <span className="text-black font-medium">Get Started</span>
         </div>
       </div>
       
