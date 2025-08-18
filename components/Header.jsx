@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 const Header = () => {
   const router = useRouter();
   return (
-    <div className='h-[100vh] w-full top-0 left-0 relative border border-b border-white/30'>
+    <div className='h-[100vh] w-full top-0 left-0 relative'>
     
       {/* Heading */}
       <div className="absolute inset-0 flex items-center justify-center top-[-30vh]">
